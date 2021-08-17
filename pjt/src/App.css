@@ -1,4 +1,41 @@
-.App {
-  font-size: 24px;
-  text-align: center;
+/* 초기 세팅 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Roboto&display=swap');
+
+body {
+	font-family: 'Noto Sans KR', 'Roboto';
+	padding-top: 95px;
+}
+
+
+/* css 시작 */
+
+.navbar {
+	padding: 0px;
+}
+
+.navbar-brand {
+	font-size: 26px;
+}
+
+.navbar-nav {
+	margin: auto;
+} 
+
+.nav-item {
+	padding: 0px 40px;
+	line-height: 95px;
+}
+
+.nav-item #collasible-nav-dropdown {
+	color: black;
+	padding: 0px;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.content {
+	text-align: center;
 }
