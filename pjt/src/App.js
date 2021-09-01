@@ -1,8 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import slide_img from './images/slide_img.jpg'
+import slide_img2 from './images/slide_img2.jpg'
+import slide_img3 from './images/slide_img3.jpg'
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar fixed="top" expand="lg" bg="light" variant="light">
@@ -79,16 +86,15 @@ function App() {
         </Container>
       </Navbar>
 
-      <div className="content">
-        <h1>h1 테스트입니다.</h1>
-        <h2>h2 테스트입니다.</h2>
-        <h3>h3 테스트입니다.</h3>
-        <h4>h4 테스트입니다.</h4>
-        <p>p 테스트입니다.</p>
-      </div>
-      <p style={{ textAlign: 'center' }}>bdceramic 프로젝트를 시작해봅시다.</p>
-    </div>
-  )
+    <Slider>
+      <div><img src ={ slide_img }  alt="slide_img" /></div>
+      <div><img src ={ slide_img2 }  alt="slide_img2" /></div>
+      <div><img src ={ slide_img3 }  alt="slide_img3" /></div>
+    </Slider>
+  </div>
+
+  );
+  
 }
 
 export default App

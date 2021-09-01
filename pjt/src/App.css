@@ -39,3 +39,8 @@ body {
 .content {
 	text-align: center;
 }
+
+img {
+	max-width: 1920px;
+
+}
